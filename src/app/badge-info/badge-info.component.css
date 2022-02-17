@@ -1,0 +1,50 @@
+
+.shield-badge {
+  position: absolute;
+  left: 35px;
+  top: 50px;
+  max-width: 50px;
+}
+
+.shield-background {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 100px;
+}
+
+.badge-card {
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.badge-title {
+  position: absolute;
+  left: 125px;
+}
+
+.badge-name {
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 60px;
+}
+
+.badge-level {
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 10px;
+}
+
+.badge-description-container {
+  position: absolute;
+  top: 145px;
+  background-color: rgba(0,0,0,0.2);
+  left: 10px ;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.badge-description {
+  padding: 10px;
+}

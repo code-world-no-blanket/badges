@@ -1,0 +1,54 @@
+<!-- search bar -->
+<form onsubmit="event.preventDefault();" role="search">
+  <label for="search">Search for stuff</label>
+  <input
+    id="search"
+    type="search"
+    placeholder="Search..."
+    autofocus
+    required
+  />
+  <button type="submit">Go</button>
+</form>
+<!-- main container with all the sections of badges -->
+<div class="main-container">
+  <div class="badge-container">
+    <div class="badge-title">Homeworks</div>
+    <hr class="solid-divider" />
+    <div></div>
+    <img
+      src="https://img.shields.io/static/v1?label=hello&message=world&color=brightgreen?style=plastic&logo=appveyor"
+      class="badge" (click)="openDialog()"
+    />
+    <img
+      src="https://img.shields.io/static/v1?label=hello&message=world&color=brightgreen?style=plastic&logo=appveyor"
+      class="badge"
+    />
+    <img
+      src="https://img.shields.io/static/v1?label=hello&message=world&color=brightgreen?style=plastic&logo=appveyor"
+      class="badge"
+    />
+    <img
+      src="https://img.shields.io/static/v1?label=hello&message=world&color=brightgreen?style=plastic&logo=appveyor"
+      class="badge"
+    />
+    <img
+      src="https://img.shields.io/static/v1?label=hello&message=world&color=brightgreen?style=plastic&logo=appveyor"
+      class="badge"
+    />
+  </div>
+  <!-- end of single container -->
+  <div class="badge-container">
+    <div class="badge-title">Quizzes</div>
+    <hr class="solid-divider" />
+    <div>hello</div>
+  </div>
+  <!-- end of single container -->
+  <div class="badge-container">
+    <div class="badge-title">Attendance</div>
+    <hr class="solid-divider" />
+    <div>hello</div>
+  </div>
+  <!-- end of single container -->
+</div>
+<!-- end of container -->

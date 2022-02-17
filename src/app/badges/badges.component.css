@@ -1,0 +1,144 @@
+.main-container {
+  position: relative;
+  top: 25px;
+  left: 10px;
+  right: 10px;
+  width: calc(100% - 15px);
+  height: calc(100% - 30px - 45px);
+  overflow: auto;
+}
+
+.badge-title {
+  padding-top: 3px;
+  /* padding-bottom: 3px; */
+  width: 100%;
+}
+
+hr.solid-divider {
+  border-top: 1px solid rgb(0, 0, 0);
+  width: 100%;
+}
+
+.badge-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  width: calc(100% - 30px);
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* this is for search bar */
+form {
+  position: relative;
+  top: 15px;
+  left: 15px;
+  width: calc(100% - 30px);
+  background: #57bd84;
+  border-radius: 0.7rem;
+}
+input,
+button {
+  height: 30px;
+  font-family: 'Lato', sans-serif;
+  border: 0;
+  color: #2f2f2f;
+  font-size: 1rem;
+}
+input[type='search'] {
+  outline: 0;
+  /* // <-- shold probably remove this for better accessibility, adding for demo aesthetics for now. */
+  width: 100%;
+  background: #fff;
+  padding: 0 1.6rem;
+  border-radius: 0.7rem;
+  appearance: none;
+  /* //for iOS input[type="search"] roundedness issue. border-radius alone doesn't work */
+  transition: all 0.3s cubic-bezier(0, 0, 0.43, 1.49);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+}
+
+input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 50em;
+  background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg)
+  no-repeat 50% 50%;
+  background-size: contain;
+  opacity: 0;
+  pointer-events: none;
+}
+
+input[type='search']:focus::-webkit-search-cancel-button {
+  opacity: 0.3;
+  pointer-events: all;
+}
+button {
+  display: none;
+  /* // prevent being able to tab to it */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6rem;
+  font-weight: bold;
+  background: #57bd84;
+  border-radius: 0 0.7rem 0.7rem 0;
+  color: white;
+}
+button:hover {
+  transition-duration: 0.1s;
+  background-color: #428b62;
+}
+
+button::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 0 0.7rem 0.7rem 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 10px white;
+}
+
+button:active::after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 0 0.7rem 0.7rem 0;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+button:active {
+  top: 1px;
+}
+
+input:not(:placeholder-shown) {
+  border-radius: 0.7rem 0 0 0.7rem;
+  width: calc(100% - 6rem);
+}
+input:not(:placeholder-shown) + button {
+  display: block;
+}
+label {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/* badge */
+.badge {
+  padding-right: 20px;
+}
